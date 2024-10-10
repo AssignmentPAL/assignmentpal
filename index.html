@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AssignmentPAL</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header id="header">
+       <img src="logo.png" alt="AssignmentPAL Logo" class="logo">
+       <div class="title">AssignmentPAL</div>
+       <nav>
+           <a href="index.html">Chat</a>
+           <a href="resources.html">Resources</a>
+           <a href="about.html">About Us</a>
+       </nav>
+   </header>
+   <main id="chat">
+       <div class="chat-container">
+           <div class="upload-section">
+               <h2>Upload Document</h2>
+               <form id="upload-form" enctype="multipart/form-data">
+                   <input type="file" id="document-upload" name="document" accept=".txt,.pdf,.doc,.docx">
+                   <button type="submit">Upload</button>
+               </form>
+           </div>
+           <div class="chat">
+               <div id="chat-history"></div>
+               <div class="chat-input">
+                   <input type="text" id="user-input" placeholder="Type your message here...">
+                   <button id="send-btn">Send</button>
+               </div>
+           </div>
+       </div>
+   </main>
+   <footer id="footer">
+       &copy; 2024 AssignmentPAL.
+   </footer>
+   <script src="scripts.js"></script>
+</body>
+</html>
